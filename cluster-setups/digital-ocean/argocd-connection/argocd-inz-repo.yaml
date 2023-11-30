@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: server-proj-private
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  description: Server Project
+  destinations:
+    - namespace: my-namespace-private
+      server: https://kubernetes.default.svc
+  sourceRepos:
+    - git@github.com:1mbili/inz-main.git
+  clusterResourceWhitelist:
+  - group: ''
+    kind: '*'
