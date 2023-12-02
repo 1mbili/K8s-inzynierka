@@ -10,7 +10,7 @@ spec:
   project: server-proj-private
   source: 
     path: apps/test
-    repoURL: git@github.com:1mbili/K8s-inzynierka.git
+    repoURL: git@github.com:1mbili/K8s-inzynierka-apps.git
     targetRevision: main
   syncPolicy:
     syncOptions:

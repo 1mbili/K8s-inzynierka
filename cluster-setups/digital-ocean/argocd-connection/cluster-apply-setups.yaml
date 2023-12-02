@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: guestbook-1
+  name: guestbook-apps
   namespace: argocd
 spec: 
   destination: 
@@ -9,8 +9,8 @@ spec:
     server: "https://kubernetes.default.svc"
   project: server-proj-private
   source: 
-    path: cluster-setups/digital-ocean/kustomization.yaml
-    repoURL: git@github.com:1mbili/K8s-inzynierka.git
+    path: test/kustomization.yaml
+    repoURL: git@github.com:1mbili/K8s-inzynierka.git-apps
     targetRevision: main
   syncPolicy:
     syncOptions:
