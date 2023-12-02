@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
   - argocd-connection
+  - operators
+  - ../../infra/namespaces
+  - ../../infra/secrets/vault
+  - ../../infra/secrets/externalSecrets

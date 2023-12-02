@@ -8,10 +8,10 @@ metadata:
 spec:
   description: Server Project
   destinations:
-    - namespace: my-namespace-private
+    - namespace: argocd
       server: https://kubernetes.default.svc
   sourceRepos:
-    - git@github.com:1mbili/inz-main.git
+    - git@github.com:1mbili/K8s-inzynierka.git
   clusterResourceWhitelist:
   - group: ''
     kind: '*'
